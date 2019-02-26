@@ -16,8 +16,11 @@
 
 <body>
 <div class="container text-center mt-5">
-    <p>Incorrect email or password</p>
-    <a href="login-form.html">Back</a>
+    <? if (isset($errormessage)) :?>
+        <p class="errorMessage"><?= $errormessage; ?></p>
+    <? endif; ?>
+    <a class="back" href="<?= $_SERVER['HTTP_REFERER'];?>">Back</a>
+
 </div>
 </body>
 </html>

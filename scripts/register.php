@@ -16,7 +16,9 @@ if (!empty($login) && !empty($password) && !empty($email)) {
     $stmt_check = $pdo->prepare($sql_check);
     $stmt_check->execute([':email' => $email]);
     if ($stmt_check->fetchColumn()) {
-        die("User with choose email already EXIST !");
+        $errormessage = "User with choose email already EXIST !";
+        include '../errors.php';
+
     }
     //==============================================
 
@@ -24,7 +26,6 @@ if (!empty($login) && !empty($password) && !empty($email)) {
 
     //=========== Create hash for password
     $password = password_hash($password, PASSWORD_DEFAULT);
-
 
 
     //============ Insert gets user data to DB ==========
@@ -38,5 +39,7 @@ if (!empty($login) && !empty($password) && !empty($email)) {
     echo "Registeretad sucsessfuly";
 
 } else {
-    echo "Please fill all colums";
+    $errormessage = "Please fill all colums";
+    include '../errors.php';
+    exit();
 }

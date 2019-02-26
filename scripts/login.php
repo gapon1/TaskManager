@@ -31,19 +31,19 @@ if (!empty($password) && !empty($email)) {
 
         } else {
             //====== Wrong password ======
-            header('Location: ../errors.html');
-            exit();
+            $errormessage = "Wrong email or password.";
+            include "../errors.php";
         }
 
     } else {
         //======= Wrong email ======
-        header('Location: ../errors.html');
-        exit();
+        $errormessage = "Wrong email or password";
+        include "../errors.php";
     }
 
 } else {
     //======= Empty data ======
-    header('Location: ../errors.html');
-    exit();
+    header('Location: ../errors.php');
+
 }
 
