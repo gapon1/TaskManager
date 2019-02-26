@@ -3,7 +3,9 @@
 require_once "scripts/db.php";
 
 if (!isset($_SESSION['user_login'])) {
-    exit("<h2 style='text-align: center'>Dont have Acces to admin page</h2>");
+    exit("<h2 style='text-align: center'>Dont have Acces to admin page<br/>
+    <a href='login-form.html'>Authorize</a></h2>"
+    );
 }
 ?>
 <!doctype html>
