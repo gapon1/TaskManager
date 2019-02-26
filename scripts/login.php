@@ -26,7 +26,7 @@ if (!empty($password) && !empty($email)) {
 
             //======= if login and password correct Redirect to list page ======
             $_SESSION['user_login'] = $user->email;
-            header('Location: ../list.html');
+            header('Location: ../list.php');
 
 
         } else {
