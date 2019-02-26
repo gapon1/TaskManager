@@ -18,6 +18,7 @@ if (!empty($login) && !empty($password) && !empty($email)) {
     if ($stmt_check->fetchColumn()) {
         $errormessage = "User with choose email already EXIST !";
         include '../errors.php';
+        exit();
 
     }
     //==============================================

@@ -33,12 +33,14 @@ if (!empty($password) && !empty($email)) {
             //====== Wrong password ======
             $errormessage = "Wrong email or password.";
             include "../errors.php";
+            exit();
         }
 
     } else {
         //======= Wrong email ======
         $errormessage = "Wrong email or password";
         include "../errors.php";
+        exit();
     }
 
 } else {
