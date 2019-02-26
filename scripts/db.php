@@ -1,10 +1,10 @@
 <?php
 
 $driver  = "mysql";
-$host    = "localhost";
-$db_name = "TaskManager";
-$db_user = "root";
-$db_pass = "test02156";
+$host    = "webdewel.mysql.tools";
+$db_name = "webdewel_task";
+$db_user = "webdewel_task";
+$db_pass = "dP_0l2Yx6*";
 $charset = "utf8";
 $options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
 

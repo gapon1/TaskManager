@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/TaskMabager_HAPON.iml" filepath="$PROJECT_DIR$/.idea/TaskMabager_HAPON.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TaskManagerHost.iml" filepath="$PROJECT_DIR$/.idea/TaskManagerHost.iml" />
     </modules>
   </component>
 </project>
