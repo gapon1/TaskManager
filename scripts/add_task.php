@@ -29,11 +29,11 @@ if ($_FILES) {
 
 
 //====== Connect to DB ======
-$db = new PDO("mysql:host=webdewel.mysql.tools;dbname=webdewel_task", 'webdewel_task', 'dP_0l2Yx6*');
+include 'db.php';
 //====== Insert data ======
 $sql = "INSERT INTO tasks (title, description, image, checkbox) VALUE (:title, :description, :image, :checkbox)";
 //====== prepare data ======
-$stmt = $db->prepare($sql);
+$stmt = $pdo->prepare($sql);
 $stmt->bindParam(":title", $title);
 $stmt->bindParam(":description", $description);
 $stmt->bindParam(":image", $filename);

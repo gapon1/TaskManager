@@ -1,5 +1,5 @@
 <?php
-
+include 'scripts/show_all.php';
 require_once "scripts/db.php";
 
 if (!isset($_SESSION['user_login'])) {
@@ -72,158 +72,43 @@ if (!isset($_SESSION['user_login'])) {
         </div>
     </section>
 
-    <div class="album py-5 bg-light">
-        <div class="container">
+    <div class="col-lg-12">
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
 
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" src="assets/img/no-image.jpg">
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-sm btn-outline-secondary">Подробнее</a>
-                                    <a href="#" class="btn btn-sm btn-outline-secondary">Изменить</a>
-                                    <a href="#" class="btn btn-sm btn-outline-secondary"
-                                       onclick="confirm('are you sure?')">Удалить</a>
+                    <?php foreach ($allTasks as $task): ?>
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img class="card-img-top" src="uploads/<?= $task['image']?>">
+                                <div class="card-body">
+                                    <p class="card-text"><?= $task['title']?></p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="/show.php?id=<?=$task['id']?>" class="btn btn-sm btn-outline-secondary">Подробнее</a>
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">Изменить</a>
+                                            <a href="#" class="btn btn-sm btn-outline-secondary"
+                                               onclick="confirm('are you sure?')">Удалить</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!--<div class="col-md-4">
-                  <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top" src="assets/img/no-image.jpg">
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Просмотреть</a>
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Изменить</a>
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Удалить</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top" src="assets/img/no-image.jpg">
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Просмотреть</a>
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Изменить</a>
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Удалить</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                    <?php endforeach; ?>
 
-                <div class="col-md-4">
-                  <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top" src="assets/img/no-image.jpg">
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Просмотреть</a>
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Изменить</a>
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Удалить</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top" src="assets/img/no-image.jpg">
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Просмотреть</a>
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Изменить</a>
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Удалить</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top" src="assets/img/no-image.jpg">
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Просмотреть</a>
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Изменить</a>
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Удалить</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-4">
-                  <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top" src="assets/img/no-image.jpg">
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Просмотреть</a>
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Изменить</a>
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Удалить</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top" src="assets/img/no-image.jpg">
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Просмотреть</a>
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Изменить</a>
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Удалить</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top" src="assets/img/no-image.jpg">
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Просмотреть</a>
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Изменить</a>
-                          <a href="#" class="btn btn-sm btn-outline-secondary">Удалить</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
             </div>
         </div>
+
     </div>
+
 
 </main>
 
 <footer class="text-muted">
     <div class="container">
         <p class="float-right">
-            <a href="#">Наверх</a>
+            <a href="#" class="btn btn-primary">Наверх</a>
         </p>
         <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
         <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting

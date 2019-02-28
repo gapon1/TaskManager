@@ -19,6 +19,20 @@
     padding-bottom: calc(var(--jumbotron-padding-y) * 2);
   }
 }
+.card-img-top{
+  height: 250px!important;
+}
+.error_link{
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.error_link__block{
+  margin: 50px 0;
+  text-align: center;
+}
+
+
 .errorMessage .back{
   text-align: center;
   padding: 20px;
