@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b37e2d98-b4e7-4a7d-a7e9-493359383a81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/add_task.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edit-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/edit-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/add_task.php" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/add_task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/5c77ed343ba39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/5c77ee46c2823.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/5c77ee55daf02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/5c77f460b87aa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/5c77f4a486a3b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/test.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +23,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/edit-form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+            <state relative-caret-position="369">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="47" column="25" selection-start-line="47" selection-end-line="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/list.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -28,7 +50,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/add_task.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-243" />
+            <state relative-caret-position="489">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -62,9 +86,9 @@
         <option value="$PROJECT_DIR$/errors.php" />
         <option value="$PROJECT_DIR$/scripts/register.php" />
         <option value="$PROJECT_DIR$/scripts/login.php" />
-        <option value="$PROJECT_DIR$/list.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/edit-form.html" />
+        <option value="$PROJECT_DIR$/list.php" />
         <option value="$PROJECT_DIR$/scripts/add_task.php" />
       </list>
     </option>
@@ -132,12 +156,12 @@
       <option name="presentableId" value="Default" />
       <updated>1551196486669</updated>
       <workItem from="1551196487965" duration="5028000" />
-      <workItem from="1551358212077" duration="6955000" />
+      <workItem from="1551358212077" duration="8771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11983000" />
+    <option name="totallyTimeSpent" value="13799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="719" extended-state="0" />
@@ -166,7 +190,7 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1542811" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1542811" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -220,20 +244,6 @@
     <entry file="file://$PROJECT_DIR$/register-form.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -251,13 +261,6 @@
     <entry file="file://$PROJECT_DIR$/uploads/test.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/edit-form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/db.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -265,9 +268,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/edit-form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="47" column="25" selection-start-line="47" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/add_task.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243" />
+        <state relative-caret-position="489">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
       </provider>
     </entry>
   </component>
