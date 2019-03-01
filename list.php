@@ -33,9 +33,9 @@ if (!isset($_SESSION['user_login'])) {
                         Then, link them off to some social networking sites or contact information.</p>
                 </div>
                 <div class="col-sm-4 offset-md-1 py-4">
-                    <h4 class="text-white">john@example.com</h4>
+                    <h4 class="text-white"><?= $_COOKIE['page_visit']?></h4>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Выйти</a></li>
+                        <li><a href="scripts/logout.php" class="text-white">Выйти</a></li>
                     </ul>
                 </div>
             </div>
@@ -67,7 +67,7 @@ if (!isset($_SESSION['user_login'])) {
             <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator,
                 etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
             <p>
-                <a href="edit-form.html" class="btn btn-primary my-2">Добавить запись</a>
+                <a href="edit-form.php" class="btn btn-primary my-2">Добавить запись</a>
             </p>
         </div>
     </section>

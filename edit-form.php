@@ -28,6 +28,9 @@
         <input type="file" name="image">
         <!--<img src="assets/img/no-image.jpg" alt="" width="300" class="mb-3">-->
         <button class="btn btn-lg btn-success btn-block" type="submit">Add task</button>
+          <br/>
+        <a class="back btn btn-primary btn-lg" href="<?= $_SERVER['HTTP_REFERER'];?>">Back</a>
+
         <p class="mt-5 mb-3 text-muted">&copy; 2018-2019</p>
       </form>
     </div>
