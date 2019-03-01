@@ -9,16 +9,13 @@ $email = trim($_POST['email']);
 
 if (!empty($password) && !empty($email)) {
 
-
     // ====== choose email from DB for comparison ======
     $sql = 'SELECT id, email, password FROM users WHERE email = :email';
-
 
     $params = [':email' => $email];
     $stmt = $pdo->prepare($sql);
     $stmt->execute($params);
     $user = $stmt->fetch(PDO::FETCH_OBJ);
-
 
     //====== Check password =======
     if ($user) {
@@ -31,7 +28,6 @@ if (!empty($password) && !empty($email)) {
             $_SESSION['userID'] = $user_id;
             header('Location: ../list.php');
 
-
         } else {
             //====== Wrong password ======
             $errormessage = "Wrong email or password.";
@@ -42,14 +38,13 @@ if (!empty($password) && !empty($email)) {
     } else {
         //======= Wrong email ======
         $errormessage = "Wrong email or password";
-        header("Location: ../errors.php");
+        include "../errors.php";
         exit();
     }
 
 } else {
     //======= Empty data ======
     header('Location: ../errors.php');
-
 }
 
 

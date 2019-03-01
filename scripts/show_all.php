@@ -1,8 +1,10 @@
 <?php
 
 include 'db.php';
+//====== Choose user use session user id
 $user_id = $_SESSION['userID'];
 
+//====== Show user tasks What belong to him
 $stmt = $pdo->prepare( "
 SELECT tasks.id, tasks.title, tasks.description, tasks.image 
 FROM tasks LEFT JOIN users

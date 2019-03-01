@@ -19,10 +19,8 @@ if (!empty($login) && !empty($password) && !empty($email)) {
         $errormessage = "User with choose email already EXIST !";
         include '../errors.php';
         exit();
-
     }
     //==============================================
-
 
 
     //=========== Create hash for password

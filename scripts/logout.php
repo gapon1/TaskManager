@@ -3,6 +3,8 @@
 
 require_once "db.php";
 
+
+// ======= Delete all user data form system
 $_SESSION = [];
 
 if (isset($_COOKIE[session_name()])) {
