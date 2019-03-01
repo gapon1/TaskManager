@@ -1,6 +1,5 @@
 <?php
 
-
 include 'scripts/db.php';
 
 if (isset($_GET['id'])) {
@@ -23,7 +22,9 @@ if (isset($_GET['id'])) {
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<?php foreach ($allTasks as $task): ?>
+<?php foreach ($allTasks
+
+as $task): ?>
 <body>
 <div class="form-wrapper text-center">
     <img src="uploads/<?= $task['image'] ?>" alt="" width="400">
