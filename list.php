@@ -120,5 +120,6 @@ if (!isset($_SESSION['user_login'])) {
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
