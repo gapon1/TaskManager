@@ -1,4 +1,4 @@
-<?php if (isset($_SESSION['user_login'])) header("Location: list.php");?>
+<?php if (!isset($_SESSION['user_login'])) header("Location: list.php");?>
 <!doctype html>
 <html lang="en">
 <head>

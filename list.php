@@ -85,7 +85,7 @@ if (!isset($_SESSION['user_login'])) {
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
                                             <a href="/show.php?id=<?=$task['id']?>" class="btn btn-sm btn-outline-secondary">Подробнее</a>
-                                            <a href="#" class="btn btn-sm btn-outline-secondary">Изменить</a>
+                                            <a href="/edit-form.php?id=<?=$task['id']?>" class="btn btn-sm btn-outline-secondary">Изменить</a>
                                             <a href="#" class="btn btn-sm btn-outline-secondary"
                                                onclick="confirm('are you sure?')">Удалить</a>
                                         </div>
