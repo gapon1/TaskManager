@@ -33,6 +33,9 @@ include 'scripts/db.php';
             <img src="uploads/<?= $task['image'] ?>" alt="" width="300" class="mb-3">
             <input type="file" name="image">
             <button class="btn btn-lg btn-primary btn-block" type="submit">Update</button>
+<br/>
+            <a class="back btn btn-primary btn-lg" href="<?= $_SERVER['HTTP_REFERER']; ?>">Back</a>
+
             <p class="mt-5 mb-3 text-muted">&copy; 2018-2019</p>
         </form>
     </div>
