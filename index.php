@@ -1,4 +1,4 @@
-<?php if (!isset($_SESSION['user_login'])) header("Location: list.php");?>
+<?php if (isset($_SESSION['user_login'])) header("Location: list.php");?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,10 +9,6 @@
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-
-    <style>
-
-    </style>
 </head>
 
 <body>

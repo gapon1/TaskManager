@@ -67,7 +67,7 @@ if (!isset($_SESSION['user_login'])) {
             <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator,
                 etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
             <p>
-                <a href="edit-form.php" class="btn btn-primary my-2">Добавить запись</a>
+                <a href="create-form.php" class="btn btn-primary my-2">Добавить запись</a>
             </p>
         </div>
     </section>
