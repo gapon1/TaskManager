@@ -1,6 +1,10 @@
 <?php
 
 
+//====== Connect to DB ======
+include 'db.php';
+
+
 $title = trim($_POST['title']);
 $description = trim($_POST['description']);
 $checkbox = $_POST['checkboxVisible'];
@@ -25,20 +29,18 @@ if ($_FILES) {
 }//==============ENG:: block get data ================
 
 
-
-
-
-//====== Connect to DB ======
-include 'db.php';
+$user_id = $_SESSION['userID'];
 //====== Insert data ======
-$sql = "INSERT INTO tasks (title, description, image, checkbox) VALUE (:title, :description, :image, :checkbox)";
+$sql = "INSERT INTO tasks (title, description, image, checkbox ,user_id) VALUE (:title, :description, :image, :checkbox, :user_id)";
 //====== prepare data ======
 $stmt = $pdo->prepare($sql);
 $stmt->bindParam(":title", $title);
 $stmt->bindParam(":description", $description);
 $stmt->bindParam(":image", $filename);
 $stmt->bindParam(":checkbox", $checkbox);
+$stmt->bindParam(":user_id", $user_id);
 $stmt->execute();
+
 
 
 header("Location: ../list.php");//REDIRECT TO LIST PAGE

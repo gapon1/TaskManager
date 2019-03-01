@@ -4,7 +4,7 @@ require_once "scripts/db.php";
 
 if (!isset($_SESSION['user_login'])) {
     exit("<h2 style='text-align: center'>Dont have Acces to admin page<br/>
-    <a href='login-form.html'>Authorize</a></h2>"
+    <a class='btn btn-primary' href='login-form.html'>Authorize</a></h2>"
     );
 }
 ?>
@@ -33,7 +33,7 @@ if (!isset($_SESSION['user_login'])) {
                         Then, link them off to some social networking sites or contact information.</p>
                 </div>
                 <div class="col-sm-4 offset-md-1 py-4">
-                    <h4 class="text-white"><?= $_COOKIE['page_visit']?></h4>
+                    <h4 class="text-white"><?=  $_SESSION['user_login']?></h4>
                     <ul class="list-unstyled">
                         <li><a href="scripts/logout.php" class="text-white">Выйти</a></li>
                     </ul>
@@ -71,7 +71,6 @@ if (!isset($_SESSION['user_login'])) {
             </p>
         </div>
     </section>
-
     <div class="col-lg-12">
         <div class="album py-5 bg-light">
             <div class="container">

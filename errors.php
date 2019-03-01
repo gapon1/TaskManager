@@ -19,7 +19,7 @@
     <? if (isset($errormessage)) :?>
         <p class="errorMessage"><?= $errormessage; ?></p>
     <? endif; ?>
-    <a class="back" href="<?= $_SERVER['HTTP_REFERER'];?>">Back</a>
+    <a class="back btn btn-lg btn-primary" href="<?= $_SERVER['HTTP_REFERER'];?>">Back</a>
 
 </div>
 </body>

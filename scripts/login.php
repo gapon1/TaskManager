@@ -11,7 +11,7 @@ if (!empty($password) && !empty($email)) {
 
 
     // ====== choose email from DB for comparison ======
-    $sql = 'SELECT email, password FROM users WHERE email = :email';
+    $sql = 'SELECT id, email, password FROM users WHERE email = :email';
 
 
     $params = [':email' => $email];
@@ -26,6 +26,10 @@ if (!empty($password) && !empty($email)) {
 
             //======= if login and password correct Redirect to list page ======
             $_SESSION['user_login'] = $user->email;
+            $user_id = $_SESSION['id'] = $user->id;
+            session_start();
+            $_SESSION['userID'] = $user_id;
+
             header('Location: ../list.php');
 
 
